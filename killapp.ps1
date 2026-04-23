@@ -1,0 +1,1 @@
+$p = Get-Process KustoTimeGrab -ErrorAction SilentlyContinue; if ($p) { Stop-Process -Id $p.Id -Force; Start-Sleep -Seconds 1 };
